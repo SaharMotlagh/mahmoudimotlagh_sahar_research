@@ -1,79 +1,18 @@
-@import './modules/reset';
-@import './modules/vars';
+@import "modules/reset";
+@import "modules/vars";
 
-@import './modules/chatmessage';
 
-// write some defaults here
+@import "modules/video";
+@import "modules/audio";
+
 body {
-    font-size: 16px;
-    background-color: #333;
-    color: white;
-
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-main { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 1em;
-}
-.video-container {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-}
-
-#myVideo {
-  width: 70%;
-}
-video {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-
-
-#video-description {
-  width: 30%;
-  margin-left: 20px;
-}
-#description {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  padding: 10px;
-  background-color: rgba(235, 69, 69, 0.8);
-  color: #fff;
-  font-size: 16px;
-  line-height: 1.5;
-  text-align: center;
   font-family: sans-serif;
+  font-size: medium;
 }
 
-/* Style the text tracks */
-video::cue {
-  color: #fff;
-  background-color: rgba(0, 0, 0, 0.8);
-  font-size: 16px;
-  text-align: center;
-  padding: 10px;
-}
-
-#play-music-button {
-  height:60px;
-  width: 60px;
-  border: none;
-  background-size: 50% 50%;
-  background-position: center;
-}
-
-.play {
-  background: url("../assets/play.png") no-repeat;
-}
-
-.pause {
-  background: url("../assets/pause.png") no-repeat;
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
 }

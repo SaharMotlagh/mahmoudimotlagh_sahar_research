@@ -1,28 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     <link rel="icon" href="data:;base64,=">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">    
-    <title>Movie</title>
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+  <title>Index</title>
 </head>
 <body>
+
+  <header><div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        Accessibility
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="nav-links">
+      <a href="index.html" target="_blank">Home</a>
+      <a href="video.html" target="_blank">Video</a>
+      <a href="audio.html" target="_blank">Audio</a>
+    </div>
+  </div></header>
+  <main class="container">
+    <h1 class="hidden">Video</h1>
+    <h2>Emily In Paris</h2>
+    <section class="text-center">
+      <h3>Keyboard Function</h3>
+      <p>To have control over buttons please press <span>Tab.</span> </p>
+    </section>
     <section>
-<!-- Video transcription -->
  <video controls>
-    <source src="video/emily.mp4">
+    <source src="video/emily.mp4" width="90%">
     <track kind="captions" label="English" src="/video-description.vtt" srclang="en" default>
  </video>
-  <!--<video id="my-video" controls>
-    <source src="./video/emily.mp4" type="video/mp4">
-    <track kind="captions" label="English" src="./video-description.text" srclang="en" default>
-  </video>
-  <div id="description"></div>
-<a href="./video-description.text"></a> -->
+ 
     </section>  
-    
+  </main> 
+
 </body>
 </html>
