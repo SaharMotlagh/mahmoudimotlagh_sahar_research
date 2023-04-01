@@ -3,21 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <link rel="icon" href="data:;base64,=">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/main.css" rel="stylesheet" type="text/css">
   <title>Document</title>
 </head>
 <body>
-  <div id="content-container">
-    <audio controls>
-      <source src="music/song.mp3" type="audio/mpeg">
-    </audio>
 
-    <audio id="music">
-    <source src="music/song.mp3" type="audio/mpeg"/>
+  <header><div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <div class="nav-title">
+        Accessibility
+      </div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    
+    <div class="nav-links">
+      <a href="index.html" target="_blank">Home</a>
+      <a href="video.html" target="_blank">Video</a>
+      <a href="audio.html" target="_blank">Audio</a>
+    </div>
+  </div></header>
+
+  <main class="container">
+    <h1 class="hidden">Easy On me</h1>
+    <h2>Easy On me</h2>
+
+    <section class="text-center">
+      <h3>Keyboard Function</h3>
+      <p>To have control over buttons please press <span>Tab.</span> </p>
+    </section>
+    
+  <section>
+    <h2 class="hidden">Adel</h2>
+      <audio controls crossorigin playsinline id="player">
+      <source src="music/song.mp3" type="audio/mp3">
+      <source src="music/song.ogg" type="audio/ogg">
+      </audio>
     </audio>
-    <button id="play-music-button" class="play"></button>
-</div>
+  </section>
+
   
-  <script src="/public/js/main.js"></script>
+
+<section class="text-center">
+    <h2>Music Lyric</h2>
+    <button id="lyricBtn">Show Lyric</button>
+    <p id="lyric">
+      
+        
+      <br>[00:00:14] There ain't no gold in this river
+      <br> That I've been washin' my hands in forever
+      <br> I know there is hope in these waters
+      <br> But I can't bring myself to swim
+      <br>When I am drowning in this silence
+      <br>Baby, let me in
+      <br>Go easy on me, baby
+      <br>I was still a child
+      <br>Didn't get the chance to
+      <br>Feel the world around me
+      <br>I had no time to choose
+      <br>What I chose to do
+      <br>So go easy on me
+      <br>There ain't no room for things to change
+      <br>When we are both so deeply stuck in our ways
+      <br>You can't deny how hard I've tried
+      <br>I changed who I was to put you both first
+      <br>But now I give up
+      <br> Go easy on me, baby
+      <br> I was still a child
+      <br>Didn't get the chance to
+      <br>Feel the world around me
+       <br> Had no time to choose
+      <br> What I chose to do
+      <br> So go easy on me
+      <br>I had good intentions
+      <br>And the highest hopes
+        <br> But I know right now
+      <br> It probably doesn't even show
+      <br> Go easy on me, baby
+      <br>I was still a child
+      <br>I didn't get the chance to
+      <br>Feel the world around me
+      <br>I had no time to choose
+      <br>What I chose to do
+      <br>So go easy on me
+    </p>
+</section>
+
+    
+
+<script src="/js/main.js" type="module" defer></script>
 </body>
 </html>

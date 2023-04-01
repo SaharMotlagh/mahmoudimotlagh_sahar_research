@@ -1,21 +1,25 @@
-// Get the video and create a text track
-const video = document.getElementById('my-video');
-const track = video.addTextTrack("captions", "English", "en");
-track.mode = "showing";
-const VTTCue = window.VTTCue || window.TextTrackCue;
+(()=>{
 
-fetch('video-description.txt')
-  .then(response => response.text())
-  .then(text => {
-    const lines = text.trim().split('\n');
-    lines.forEach(line => {
-      const parts = line.split(/\s+/);
-      const startTime = parseFloat(parts.shift());
-      const endTime = parseFloat(parts.shift());
-      const cueText = parts.join(' ');
-      console.log(startTime, endTime, cueText);
-      const cue = new VTT(startTime, endTime, cueText);
-      track.addCue(cue);
-  });
-})
-  //.catch(error => console.error(error));
+	const	lyrictBtn = document.querySelector("#lyricBtn"),
+	lyric = document.querySelector("#lyric");
+
+	let toggle = false;
+
+	function toggleLyric() {
+		if(toggle){
+			toggle = false;
+			lyricBtn.textContent = "Show";
+			lyric.style.display = "none";
+
+		} else {
+			toggle = true;
+			lyricBtn.textContent = "Hide";
+			lyric.style.display = "block";
+		}
+	}
+
+	lyricBtn.addEventListener("click", toggleLyric);
+
+
+
+})();
